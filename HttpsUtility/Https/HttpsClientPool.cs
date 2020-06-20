@@ -70,9 +70,12 @@ namespace HttpsUtility.Https
                 if (additionalHeaders != null)
                 {
                     foreach (var item in additionalHeaders)
+                    {
                         httpsRequest.Header.AddHeader(new HttpsHeader(item.Key, item.Value));
+                    } 
                 }
 
+                httpsRequest.Header.AddHeader(new HttpsHeader("Connection", "close"));
                 httpsRequest.Url.Parse(url);
 
                 HttpsClientResponse httpResponse = client.Dispatch(httpsRequest);
