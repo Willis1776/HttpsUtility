@@ -49,6 +49,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json.Compact, Version=4.0.8.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\Newtonsoft.Json.Compact.dll</HintPath>
+    </Reference>
     <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
@@ -69,9 +73,11 @@
     <Compile Include="Diagnostics\AssertionException.cs" />
     <Compile Include="Diagnostics\Debug.cs" />
     <Compile Include="Diagnostics\DebugLevel.cs" />
+    <Compile Include="EnergyData.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Https\HttpsClientPool.cs" />
     <Compile Include="Https\HttpsResult.cs" />
+    <Compile Include="JsonData.cs" />
     <Compile Include="Lazy.cs" />
     <Compile Include="ObjectPool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
